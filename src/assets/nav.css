@@ -1,0 +1,137 @@
+.center-nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: #111;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding-left: 20px;
+    border-bottom: 1px solid rgb(37,37,37);
+
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+    margin-right: 10px;
+}
+
+.sidenav {
+  height: 100%; 
+  width: 350px; 
+  position: fixed; 
+  z-index: 1;
+  top: 100px; 
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 20px;
+  padding-bottom: 100px;
+  padding-left: 40px;
+  padding-right: 30px;
+
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #818181;
+  display: block;
+}
+
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.p-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    padding-top: 15px;
+
+}
+ul, li {
+    list-style: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: gray;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+ul, li:hover {
+    color: white;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 350px; 
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.todo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+    margin-bottom: 20px;
+
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-top: 1px solid rgb(37, 37, 37);
+   
+    /*border: 1px solid red; */
+ 
+}
+
+/*
+.card-pos {
+    display: flex;
+    margin-left: 350px;
+}
+*/
+.menu-pos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px; width: 150px;}
+  .sidenav a {font-size: 18px;}
+  .main p {font-size: 9px;}
+}
+
+@media (max-width: 900px) {
+    .sidenav { display: none; }
+    .main{ margin-left: 0; }
+    .menu-pos { display: block; }
+
+}
